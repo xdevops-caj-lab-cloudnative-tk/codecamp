@@ -74,11 +74,13 @@ Response:
 
 ## 创建资源表示类
 
-创建一个资源表示类对应要返回的JSON消息体。
+创建一个资源表示类（POJO类）对应要返回的JSON消息体。
+
+可以使用Lombok来简化POJO类的代码。
 
 ## 创建资源控制器
 
-创建一个资源控制类，来暴露REST API端点，接受HTTP请求并返回数据。
+创建一个资源控制类（使用`@RestController`），来暴露REST API端点，接受HTTP请求并返回数据。
 
 ## 测试API
 
@@ -90,7 +92,7 @@ Response:
 
 ## 测试访问API
 
-使用HTTPie来访问API：
+使用[HTTPie](https://github.com/httpie/httpie)来访问API：
 
 ```bash
 http get :8080/greeting
