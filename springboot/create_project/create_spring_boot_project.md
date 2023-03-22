@@ -8,6 +8,12 @@
 
 ## 在IDE中创建
 
+## 推荐的IDE
+
+- Intellij IDEA
+- Spring Tool Suite (STS)
+- VSCode
+
 ### 在Intellj IDEA中创建
 
 1. 打开File -> New -> Project
@@ -63,6 +69,12 @@
 ```bash
 mvn clean install
 mvn spring-boot:run
+```
+
+或
+```bash
+./mvnw clean install
+./mvnw spring-boot:run
 ```
 
 或在IDE的Maven面板上操作。
