@@ -2,7 +2,8 @@
 
 ## Spring Boot与JDK的版本映射
 
-- Spring Boot 2 (Java 8 +)
+- Spring Boot 2 (Java 8+)
+- Spring Boot 3 (Java 17+)
 
 
 ## 在IDE中创建
@@ -39,7 +40,7 @@
 
 另外也可以通过Spring官方的Spring Initializr网站生成Spring Boot项目后，再导入到IDE中。
 
-## 在Spring官方的Spring Initializr创建
+## 在Spring官方的Spring Initializr网站创建
 
 1. 访问<https://start.spring.io/>
 2. 选择Project为Maven
@@ -69,6 +70,11 @@ mvn spring-boot:run
 ### 以IDE方式运行
 
 在IDE中找到Spring Boot Application类，运行该类的`main`方法。
+
+
+## References
+
+- [Spring Boot Getting Started](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html)
 
 ## Troubleshooting
 
