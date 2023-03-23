@@ -190,7 +190,7 @@ Response:
 
 ### 删除Employee
 
-- API Endpoint: `/employees`
+- API Endpoint: `/employees{id}`
 - HTTP Method: `DELETE`
 - HTTP Status Code: `200`
 
