@@ -17,7 +17,7 @@ Employee:
 
 - 查找全部Employee：`GET /employees`
 - 新增Employee： `POST /employees/{id}`
-- 查找Employee： `GET /employees/{id}`
+- 查找Employee（如果找不到，则返回404和错误信息）： `GET /employees/{id}`
 - 更新Employee（如果不存在则新增）： `PUT /employees/{id}`
 - 删除Employee： `DELETE /employees/{id}`
 
@@ -47,15 +47,15 @@ Employee:
 
 ## 异常处理
 
-另外需要自定义ControllerAdvice类来处理该异常，返回HTTP Status Code为`404`。
+另外需要自定义ControllerAdvice类来处理该异常，返回HTTP Status Code为`404`和错误信息。
 
 ## 测试API
 
 ### 新增Employee
 
-API Endpoint: `/employees`
-HTTP Method: `POST`
-HTTP Status Code: `200`
+- API Endpoint: `/employees`
+- HTTP Method: `POST`
+- HTTP Status Code: `200`
 
 Request:
 ```bash
@@ -79,9 +79,9 @@ http post :8080/employees name="Joe" role="Product Owner"
 
 ### 查询所有Employee
 
-API Endpoint: `/employees`
-HTTP Method: `GET`
-HTTP Status Code: `200`
+- API Endpoint: `/employees`
+- HTTP Method: `GET`
+- HTTP Status Code: `200`
 
 Request:
 ```bash
@@ -110,11 +110,13 @@ Response:
 ```
 
 ### 查找Employee
-API Endpoint: `/employees/{id}`
-HTTP Method: `GET`
+
+- API Endpoint: `/employees/{id}`
+- HTTP Method: `GET`
 
 **查找存在的Employee**
-HTTP Status Code: `200`
+
+- HTTP Status Code: `200`
 
 Request:
 ```bash
@@ -131,7 +133,8 @@ Response:
 ```
 
 **查找不存在的Employee**
-HTTP Status Code: `404`
+
+- HTTP Status Code: `404`
 
 Request:
 ```bash
@@ -146,11 +149,12 @@ Could not find employee 99
 
 ### 更新Employee
 
-API Endpoint: `/employees/{id}`
-HTTP Method: `PUT`
+- API Endpoint: `/employees/{id}`
+- HTTP Method: `PUT`
 
 **更新已经存在的Employee**
-HTTP Status Code: `200`
+
+- HTTP Status Code: `200`
 
 Request:
 ```bash
@@ -167,7 +171,8 @@ Response:
 ```
 
 **更新不存在的Employee**
-HTTP Status Code: `200`
+
+- HTTP Status Code: `200`
 
 Request:
 ```bash
@@ -185,9 +190,9 @@ Response:
 
 ### 删除Employee
 
-API Endpoint: `/employees`
-HTTP Method: `DELETE`
-HTTP Status Code: `200`
+- API Endpoint: `/employees`
+- HTTP Method: `DELETE`
+- HTTP Status Code: `200`
 
 Request:
 ```bash
