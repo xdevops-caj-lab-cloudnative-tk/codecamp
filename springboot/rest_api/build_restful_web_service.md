@@ -100,6 +100,13 @@ http get :8080/greeting?name=William
 http get :8080/greeting?name=John
 ```
 
+或者使用curl来访问API：
+```bash
+curl -X GET localhost:8080/greeting
+curl -X GET localhost:8080/greeting?name=William
+curl -X GET localhost:8080/greeting?name=John
+```
+
 或者使用Postman来访问API。
 
 ## Demo
