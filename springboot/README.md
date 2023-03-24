@@ -9,3 +9,15 @@
 - 如何构建容器镜像
 - 如何部署Spring Boot应用到容器云
 - 微服务的可观测性
+    - actuator
+
+
+## System Requirements
+
+- Java 17+
+- Maven 3.5+
+
+## References
+
+- [Spring Boot Docs](https://docs.spring.io/spring-boot/docs/current/reference/html)
+- [Spring Initializr](https://start.spring.io/)
