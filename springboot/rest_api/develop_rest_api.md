@@ -8,7 +8,9 @@
 - [Spring Boot 3集成OpenAPI 3](./springboot3_openapi3.md)
 
 ## 使用RESTful Web服务
-- 使用RESTful Web服务
+- 使用RESTful Web服务 - RestTemplate
+- 使用RESTful Web服务 - Webclient
+- 使用RESTful Web服务 - OpenFeign / Retrofit
 
 
 
