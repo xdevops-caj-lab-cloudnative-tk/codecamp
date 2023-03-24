@@ -1,7 +1,9 @@
 # 全局异常处理和统一错误响应数据格式
 
 
-## 引入校验依赖
+## 参数校验
+
+引入校验依赖
 
 ```xml
 <dependency>
@@ -9,6 +11,10 @@
     <artifactId>spring-boot-starter-validation</artifactId>
 </dependency>
 ```
+
+在Request DTO中设置校验规则。
+
+在Controller的方法参数中使用`@Valid`注解表示要对该参数进行校验。
 
 ## 定义错误时返回数据的统一格式
 
