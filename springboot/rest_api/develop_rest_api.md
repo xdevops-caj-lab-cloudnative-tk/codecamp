@@ -9,5 +9,5 @@
 
 ## 使用RESTful Web服务
 - [使用RESTful Web服务 - RestTemplate](./consuming_rest_resttemplate.md)
-- [使用RESTful Web服务 - Webclient](./consuming_rest_webclient.md)
+- [使用RESTful Web服务 - WebClient](./consuming_rest_webclient.md)
 - [使用RESTful Web服务 - OpenFeign](./consuming_rest_openfeign.md)
