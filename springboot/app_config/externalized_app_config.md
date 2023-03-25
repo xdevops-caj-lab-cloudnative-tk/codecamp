@@ -35,6 +35,19 @@ Spring Boot 使用一种非常特殊的PropertySource顺序，旨在允许合理
 
 特定于配置文件的属性从与标准相同的位置加载`application.properties`，**特定于配置文件的文件始终覆盖非特定文件**。如果指定了多个配置文件，则应用**最后获胜**的策略。例如，如果在`spring.profiles.active`配置`prod,live`，则 中的值`application-prod.properties`可以被`application-live.properties 中的值覆盖`。
 
+## 使用属性占位符
+
+在application.properties中可以使用属性占位符`${name}`。
+属性占位符还可以指定一个默认值，例如`${name:default}`。
+
+例子：
+```properties
+spring.datasource.url=${MYSQL_URL:jdbc:mysql://localhost/petclinic}
+```
+
+当应用程序从环境变量中获取`MYSQL_URL`的值后，就会覆盖原来的默认值`jdbc:mysql://localhost/petclinic`。
+
+
 
 ## References
 
