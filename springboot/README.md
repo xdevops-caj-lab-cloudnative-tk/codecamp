@@ -2,12 +2,9 @@
 
 - [如何创建Spring Boot项目](./create_project/create_spring_boot_project.md)
 - [如何实现RESTful API接口](./rest_api/develop_rest_api.md)
-- [如何实现多环境的Spring Boot应用配置](./app_config/externalized_app_config.md)
-- Spring Boot配置的加载顺序以及在容器云中的配置管理
-- Spring Boot如何管理Secret
-- Spring Boot应用与容器云的集成
-- 如何构建容器镜像
-- 如何部署Spring Boot应用到容器云
+- [Spring Boot配置的加载顺序以及如何实现多环境的Spring Boot应用配置](./app_config/externalized_app_config.md)
+- [如何构建容器镜像](./kubernetes_deployment/build_container_image.md)
+- [如何部署Spring Boot应用到容器云以及管理配置和Secret](./kubernetes_deployment/deploy_spring_boot_to_kubernetes.md)
 - 微服务的可观测性
     - actuator
 

@@ -1,6 +1,6 @@
-# 如何实现多环境的Spring Boot应用配置
+# Spring Boot配置的加载顺序以及如何实现多环境的Spring Boot应用配置
 
-## Spring Boot应用配置
+## Spring Boot配置的加载顺序
 
 Spring Boot 使用一种非常特殊的PropertySource顺序，旨在允许合理地覆盖值。后面的属性源可以覆盖前面定义的值。来源按以下顺序考虑：
 
